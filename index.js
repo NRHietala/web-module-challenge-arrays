@@ -47,7 +47,7 @@ Use the copy function below to do the following:
 
 
 function copy(oldArr) {
-    let newArr = oldArr.slice(0,31);
+    let newArr = [...oldArr];
     return newArr;
 }
 
@@ -145,7 +145,7 @@ Use the removeFlavorByName function below to do the following:
 */
 
 function removeFlavorByName(arr, flavName){
-
+    
 }
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
@@ -167,8 +167,15 @@ Use the filterByWord function below to do the following:
     DO NOT USE ADVANCED ARRAY METHODS (i.e. .filter) to solve this problem. 
 */
 
-function filterByWord(/*your code here*/){
-    /*your code here*/
+
+function filterByWord(arr, flavName){
+    let newArr = [];
+    for (let i=0; i < arr.length; i++) {
+        if(arr[i].includes(flavName)) {
+            newArr.push(arr[i]);
+        }
+    }
+    return newArr;
 }
 
 
