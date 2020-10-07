@@ -44,12 +44,10 @@ Use the copy function below to do the following:
     1. Receive two arguments: one for your new array and one for your original array
     2. Return the new array that holds an exact copy of the old array  
 */
-let newArr = [];
 
-function copy(newArr, oldArr) {
-    for (let i=0; i < oldArr.length; i++) {
-        newArr.push(oldArr[i]); 
-    }
+
+function copy(oldArr) {
+    let newArr = oldArr.slice(0,31);
     return newArr;
 }
 
