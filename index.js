@@ -67,15 +67,19 @@ For Example: is31Flavors(originalFlavors) will return true if your code is worki
 
 
 function is31Flavors(arr){
-    let count = 0;
-    for (let i=0; i < arr.length; i++) {
-       count++;
-    }
-    if (count === 31) {
-        return true;
-    } else {
-        return false;
-    }
+    
+    // let count = 0;
+    // for (let i=0; i < arr.length; i++) {
+    //    count++;
+    // }
+    // if (count === 31) {
+    //     return true;
+    // } else {
+    //     return false;
+    // }
+
+    return (arr.length === 31? true: false);
+
 }
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
