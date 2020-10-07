@@ -44,10 +44,14 @@ Use the copy function below to do the following:
     1. Receive two arguments: one for your new array and one for your original array
     2. Return the new array that holds an exact copy of the old array  
 */
+let newArr = [];
 
-function copy(/*your code here*/){
-    /*your code here*/
-}    
+function copy(newArr, oldArr) {
+    for (let i=0; i < oldArr.length; i++) {
+        newArr.push(oldArr[i]); 
+    }
+    return newArr;
+}
 
 
 
@@ -64,8 +68,16 @@ For Example: is31Flavors(originalFlavors) will return true if your code is worki
 */
 
 
-function is31Flavors(/*your code here*/){
-   /*your code here*/
+function is31Flavors(arr){
+    let count = 0;
+    for (let i=0; i < arr.length; i++) {
+       count++;
+    }
+    if (count === 31) {
+        return true;
+    } else {
+        return false;
+    }
 }
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -81,8 +93,9 @@ Use the addFlavor function below to do the following:
 */
 
 
-function addFlavor(/*your code here*/){
-   /*your code here*/
+function addFlavor(oldArr, flavor) {
+   oldArr.unshift(flavor);
+   return oldArr;
 }
 
 
@@ -97,8 +110,9 @@ Use the removeLastFlavor function below to do the following:
     For example: running removeLastFlavor(originalFlavors) would return ["Rainbow Sherbert", "Banana Nut Fudge",..."Vanilla"]
 */
 
-function removeLastFlavor(/*your code here*/){
-   /*your code here*/
+function removeLastFlavor(arr){
+   arr.pop(arr.length-1);
+   return arr;
 }
 
 
@@ -113,8 +127,8 @@ Use the getFlavorByIndex function below to do the following:
     For example: running getFlavorByIndex(originalFlavors, 2) would return "Black Walnut", assuming Rainbow Sherbert has been added successfully
 */
 
-function getFlavorByIndex(/*your code here*/){
-    /*your code here*/
+function getFlavorByIndex(arr, num){
+    return arr[num];
 }
 
 
