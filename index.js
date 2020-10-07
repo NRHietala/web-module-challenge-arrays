@@ -145,7 +145,12 @@ Use the removeFlavorByName function below to do the following:
 */
 
 function removeFlavorByName(arr, flavName){
-    
+    for (let i=0; i < arr.length; i++) {
+        if(arr[i] === flavName) {
+            arr.splice( i , 1 );
+        }
+    }
+    return arr;
 }
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
